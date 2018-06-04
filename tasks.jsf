@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="untitled1.jsf" id="d1" styleClass="whiteBackground">
+        <af:form id="f1" styleClass="whiteBackground">
+            <af:pageTemplate viewId="/templateDef1.jspx" id="pt1">
+                <f:facet name="header">
+                    <af:outputText value="BPM" styleClass="WBMetric2" id="ot1"/>
+                </f:facet>
+                <f:facet name="status">
+                    <af:menuBar id="mb1">
+                        <af:menu text="lakshmana@novartis.com" id="m2">
+                            <af:commandMenuItem text="Preferences" id="cmi1"/>
+                            <af:commandMenuItem text="Sign Out" id="cmi2"/>
+                        </af:menu>
+                    </af:menuBar>
+                </f:facet>
+                <f:facet name="appNav">
+                    <af:button text="Home" id="b1" styleClass="WBDisplayBlockMargin AFAppNavbarButton" selected="true"
+                               type="radio"/>
+                    <af:button text="Search" id="b2" styleClass="WBDisplayBlockMargin AFAppNavbarButton" type="radio"/>
+                    <af:button text="User Management" id="b3" styleClass="WBDisplayBlockMargin AFAppNavbarButton"
+                               type="radio"/>
+                </f:facet>
+                <f:facet name="globalLinks"></f:facet>
+                <f:facet name="footer">
+                    <af:navigationPane hint="bar" id="np1">
+                        <af:commandNavigationItem id="ni1" text="About Novartis"/>
+                        <af:commandNavigationItem id="ni2" text="Contact Us"/>
+                        <af:commandNavigationItem id="ni3" text="Legal Notices"/>
+                        <af:commandNavigationItem id="ni4" text="Terms of Use"/>
+                        <af:commandNavigationItem id="ni5" text="Your Privacy Rights"/>
+                    </af:navigationPane>
+                </f:facet>
+                <f:facet name="center">
+                    <af:panelTabbed position="above" id="pt2" styleClass="AFStretchWidth">
+                        <af:showDetailItem id="tab1" text="Assigned tasks">
+                        <!--Add Region-->
+                        </af:showDetailItem>
+                    </af:panelTabbed>
+                </f:facet>
+                <f:facet name="start"/>
+                <f:facet name="end"/>
+                <f:attribute name="endWidth" value="0px"/>
+                <f:attribute name="startWidth" value="0px"/>
+                <f:attribute name="showFooter" value="true"/>
+            </af:pageTemplate>
+        </af:form>
+    </af:document>
+</f:view>

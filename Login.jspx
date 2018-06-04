@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="Login.jspx" id="d1">
+            <af:form id="f1">
+                <af:panelGroupLayout id="pgl2" halign="center" layout="vertical"
+                                     styleClass="whiteBackground AFStretchWidth ">
+                    <af:panelStretchLayout id="psl1" styleClass="whiteBackground">
+                        <f:facet name="start"/>
+                        <f:facet name="end"/>
+                        <f:facet name="top"/>
+                        <f:facet name="bottom"/>
+                        <f:facet name="center">
+                            <af:panelGroupLayout id="pb2" layout="vertical" halign="center"
+                                                 styleClass=" AFStretchWidth WBDisplayBlock  WBDisplayBlockMargin whiteBackground  WBDashboardCard">
+                                <af:spacer id="s2" height="125"/>
+                                <af:panelGridLayout id="pglbdgs"  styleClass="WBDashboardCardSize3 ">
+                                    <af:gridRow id="grbdgs2">
+                                        <af:gridCell id="gcbdgs3" halign="start">
+                                            <af:image source="/resources/images/logo3.png" id="i1"/>
+                                            <af:panelFormLayout id="pfl1" styleClass="AFStretchWidth">
+                                                <af:panelGroupLayout id="pgl1" layout="vertical" halign="start"
+                                                                     styleClass="AFStretchWidth">
+                                                    <af:outputText id="numMeetings" value="Username"
+                                                                   styleClass="WBMetricMedium2 ImageColorCustom"/>
+                                                    <af:inputText label="" id="it1" value="#{loginBean.username}" clientComponent="true"
+                                                                  columns="50"
+                                                                  styleClass="WBDashboardLabel WBMetric6Color"/>
+                                                    <af:outputText id="ot1" value="Password"
+                                                                   styleClass="WBMetricMedium2 ImageColorCustom"/>
+                                                    <af:inputText label="" id="it2" secret="true" value="#{loginBean.password}"
+                                                                  columns="50"
+                                                                  styleClass="WBDashboardLabel WBMetric6Color"/>
+                                                </af:panelGroupLayout>
+                                                <af:panelGroupLayout id="pgl3" layout="horizontal" halign="end"
+                                                                     styleClass="AFStretchWidth">
+                                                    <af:commandButton text="Help"
+                                                                      styleClass="WBDashboardLabel ImageColorCustom "
+                                                                      id="cb1" action="login1"/>
+                                                    <af:spacer id="s1" width="10"/>
+                                                    <af:commandButton text="Login"  action="#{loginBean.doLogin}"
+                                                                      styleClass="WBDashboardLabel ImageColorCustom"
+                                                                      id="cb2" />
+                                                </af:panelGroupLayout>
+                                            </af:panelFormLayout>
+                                        </af:gridCell>
+                                    </af:gridRow>
+                                </af:panelGridLayout>
+                            </af:panelGroupLayout>
+                        </f:facet>
+                    </af:panelStretchLayout>
+                </af:panelGroupLayout>
+            </af:form>
+        </af:document>
+    </f:view>
+</jsp:root>
